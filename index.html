@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container"> 
+        <h1>Login de Acesso</h1>
+
+       
+        <form id="loginForm">
+            
+            <div>
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Código de acesso" required>
+            </div>
+
+            
+            <div id="setor"> 
+                <p>Selecione o setor:</p>
+                
+                <div class="setores">                
+                    <label><input type="radio" name="setor" value="Comercial" checked>Comercial</label>
+                    <label><input type="radio" name="setor" value="RH">RH</label>
+                    <label><input type="radio" name="setor" value="TI">TI</label>
+                </div>
+                
+            </div>
+            
+
+           
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            
+            <div>
+                <button id="button">Entrar</button>
+            </div>
+            <div id="mensagem"></div>
+        </form>
+        
+    </div>
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>
